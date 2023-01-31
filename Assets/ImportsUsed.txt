@@ -1,0 +1,8 @@
+Terrain_Sample_Assets
+{
+	rock_terrain_layer
+	muddy_terrain_layer
+	snow_terrain_layer
+}
+
+RTP Vol. 1
