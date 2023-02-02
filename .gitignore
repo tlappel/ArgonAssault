@@ -70,6 +70,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-/[Aa]ssets/TerrainSampleAssets
-/[Aa]ssets/RTP Vol.1
-/[Aa]ssets/NatureStarterKit2
+/[Aa]ssets/AssetPacks
