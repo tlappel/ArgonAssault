@@ -13,9 +13,9 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float positionYawFactor = 2;
     [SerializeField] float controlYawFactor = 15f;
     [SerializeField] float controlRollFactor = -20f;
-    float pitch;
-    float yaw;
-    float roll;
+    //float pitch;
+    //float yaw;
+    //float roll;
     float xThrow,yThrow;
     
     // Start is called before the first frame update
@@ -35,11 +35,11 @@ public class PlayerControls : MonoBehaviour
     {
         float pitchFromPositon = transform.localPosition.y * positionPitchFactor;
         float pitchFromControl = yThrow * controlPitchFactor;
-        pitch = pitchFromPositon + pitchFromControl;
+        float pitch = pitchFromPositon + pitchFromControl;
         float yawFromPosition = transform.localPosition.x * positionYawFactor;
         float yawFromControl = xThrow * controlYawFactor;
-        yaw = yawFromPosition + yawFromControl;
-        roll = xThrow * controlRollFactor;
+        float yaw = yawFromPosition + yawFromControl;
+        float roll = xThrow * controlRollFactor;
         transform.localRotation = Quaternion.Euler(pitch,yaw,roll);
     }
     private void ProcessTranslation()
